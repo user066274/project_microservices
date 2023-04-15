@@ -1,0 +1,9 @@
+Neuen Bericht hinzufügen 
+curl -X POST -H "Content-Type: application/json" -d '{"thesis_id": 1, "supervisor_id": 1, "content": "This is the first report"}' http://localhost:5004/reports
+
+Alle Berichte abrufen 
+curl -X GET -H "Content-Type: application/json" http://localhost:5004/reports
+
+Vorhandenen Bericht aktualisieren 
+curl -X PUT -H "Content-Type: application/json" -d '{"content": "This is the updated report"}' http://localhost:5004/reports/1
+

@@ -1,0 +1,10 @@
+Register User
+curl -X POST -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}' http://localhost:5000/register
+
+Login with username password 
+curl -X POST -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}' http://localhost:5000/login
+
+Login with token 
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer your_jwt_token" http://localhost:5000/protected
+
+

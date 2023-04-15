@@ -1,0 +1,9 @@
+Neuen Thesis Vorschlag hinzufügen 
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Sample Thesis Title", "description": "Sample thesis description."}' http://localhost:5001/thesis
+
+Alle Thesis Vorschläge anzeigen 
+curl -X GET -H "Content-Type: application/json" http://localhost:5001/thesis
+
+Thesis aktualiseren mit ID 
+curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated Thesis Title", "description": "Updated thesis description.", "supervisor_id": 2}' http://localhost:5001/thesis/1
+

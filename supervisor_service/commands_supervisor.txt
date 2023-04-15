@@ -1,0 +1,9 @@
+Neuen Supervisor hinzufügen 
+curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "department": "Computer Science", "email": "johndoe@example.com"}' http://localhost:5002/supervisors
+
+Liste aller Supervisoren abrufen 
+curl -X GET -H "Content-Type: application/json" http://localhost:5002/supervisors
+
+Supervisor aktualisieren 
+curl -X PUT -H "Content-Type: application/json" -d '{"name": "Jane Doe", "department": "Computer Science", "email": "janedoe@example.com"}' http://localhost:5002/supervisors/1
+

@@ -1,0 +1,9 @@
+Neuen Benutzer registrieren 
+curl -X POST -H "Content-Type: application/json" -d '{"username": "user1", "email": "user1@example.com", "role": "student"}' http://localhost:5003/users
+
+Benutzerinformationen abrufen 
+curl -X GET -H "Content-Type: application/json" http://localhost:5003/users/1
+
+Benutzerinformationen aktualisieren 
+curl -X PUT -H "Content-Type: application/json" -d '{"email": "newuser1@example.com", "role": "validator"}' http://localhost:5003/users/1
+
